@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2780101E188ADE61003ECB16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2780101D188ADE61003ECB16 /* Images.xcassets */; };
 		27A62BAA188AD1D500636FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BA9188AD1D500636FAE /* Foundation.framework */; };
 		27A62BAC188AD1D500636FAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BAB188AD1D500636FAE /* CoreGraphics.framework */; };
 		27A62BAE188AD1D500636FAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BAD188AD1D500636FAE /* UIKit.framework */; };
 		27A62BB4188AD1D500636FAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27A62BB2188AD1D500636FAE /* InfoPlist.strings */; };
 		27A62BB6188AD1D500636FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A62BB5188AD1D500636FAE /* main.m */; };
 		27A62BBA188AD1D500636FAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A62BB9188AD1D500636FAE /* AppDelegate.m */; };
-		27A62BBC188AD1D500636FAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A62BBB188AD1D500636FAE /* Images.xcassets */; };
 		27A62BC3188AD1D500636FAE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BC2188AD1D500636FAE /* XCTest.framework */; };
 		27A62BC4188AD1D500636FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BA9188AD1D500636FAE /* Foundation.framework */; };
 		27A62BC5188AD1D500636FAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BAD188AD1D500636FAE /* UIKit.framework */; };
@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2780101D188ADE61003ECB16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27A62BA6188AD1D500636FAE /* Clienteling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clienteling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A62BA9188AD1D500636FAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27A62BAB188AD1D500636FAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -42,7 +43,6 @@
 		27A62BB7188AD1D500636FAE /* Clienteling-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clienteling-Prefix.pch"; sourceTree = "<group>"; };
 		27A62BB8188AD1D500636FAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27A62BB9188AD1D500636FAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27A62BBB188AD1D500636FAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27A62BC1188AD1D500636FAE /* ClientelingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientelingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A62BC2188AD1D500636FAE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		27A62BCA188AD1D500636FAE /* ClientelingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClientelingTests-Info.plist"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			children = (
 				27A62BB8188AD1D500636FAE /* AppDelegate.h */,
 				27A62BB9188AD1D500636FAE /* AppDelegate.m */,
-				27A62BBB188AD1D500636FAE /* Images.xcassets */,
+				2780101D188ADE61003ECB16 /* Images.xcassets */,
 				27A62BB0188AD1D500636FAE /* Supporting Files */,
 			);
 			path = Clienteling;
@@ -219,8 +219,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2780101E188ADE61003ECB16 /* Images.xcassets in Resources */,
 				27A62BB4188AD1D500636FAE /* InfoPlist.strings in Resources */,
-				27A62BBC188AD1D500636FAE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +443,7 @@
 				27A62BD4188AD1D500636FAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27A62BD5188AD1D500636FAE /* Build configuration list for PBXNativeTarget "ClientelingTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +452,7 @@
 				27A62BD7188AD1D500636FAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
