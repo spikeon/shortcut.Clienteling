@@ -10,16 +10,12 @@
 
 @implementation AppDelegate
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-
-    NSString *url = @"http://mflynn:8080/Clienteling/index";
     
-    // Open with Google Chrome if possible
+    NSString *url = @"mflynn:8080/Clienteling/index";
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL   URLWithString:@"googlechrome:"]]) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"googlechrome://%@", url]]];
     } else {

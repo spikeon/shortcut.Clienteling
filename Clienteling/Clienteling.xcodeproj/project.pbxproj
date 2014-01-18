@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273BEB5F188B20F800996CE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273BEB5E188B20F800996CE8 /* ViewController.m */; };
 		2780101E188ADE61003ECB16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2780101D188ADE61003ECB16 /* Images.xcassets */; };
+		27801029188AE6B6003ECB16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27801028188AE6B6003ECB16 /* Main.storyboard */; };
 		27A62BAA188AD1D500636FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BA9188AD1D500636FAE /* Foundation.framework */; };
 		27A62BAC188AD1D500636FAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BAB188AD1D500636FAE /* CoreGraphics.framework */; };
 		27A62BAE188AD1D500636FAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A62BAD188AD1D500636FAE /* UIKit.framework */; };
@@ -32,7 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		273BEB5D188B20F800996CE8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		273BEB5E188B20F800996CE8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2780101D188ADE61003ECB16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27801028188AE6B6003ECB16 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		27A62BA6188AD1D500636FAE /* Clienteling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clienteling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A62BA9188AD1D500636FAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27A62BAB188AD1D500636FAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,7 +112,10 @@
 		27A62BAF188AD1D500636FAE /* Clienteling */ = {
 			isa = PBXGroup;
 			children = (
+				273BEB5D188B20F800996CE8 /* ViewController.h */,
+				273BEB5E188B20F800996CE8 /* ViewController.m */,
 				27A62BB8188AD1D500636FAE /* AppDelegate.h */,
+				27801028188AE6B6003ECB16 /* Main.storyboard */,
 				27A62BB9188AD1D500636FAE /* AppDelegate.m */,
 				2780101D188ADE61003ECB16 /* Images.xcassets */,
 				27A62BB0188AD1D500636FAE /* Supporting Files */,
@@ -191,6 +199,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Michael Flynn";
 				TargetAttributes = {
+					27A62BA5188AD1D500636FAE = {
+						DevelopmentTeam = 6QR5UT6A65;
+					};
 					27A62BC0188AD1D500636FAE = {
 						TestTargetID = 27A62BA5188AD1D500636FAE;
 					};
@@ -219,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27801029188AE6B6003ECB16 /* Main.storyboard in Resources */,
 				2780101E188ADE61003ECB16 /* Images.xcassets in Resources */,
 				27A62BB4188AD1D500636FAE /* InfoPlist.strings in Resources */,
 			);
@@ -239,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273BEB5F188B20F800996CE8 /* ViewController.m in Sources */,
 				27A62BBA188AD1D500636FAE /* AppDelegate.m in Sources */,
 				27A62BB6188AD1D500636FAE /* main.m in Sources */,
 			);
@@ -361,10 +374,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clienteling/Clienteling-Prefix.pch";
 				INFOPLIST_FILE = "Clienteling/Clienteling-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -374,10 +391,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Clienteling/Clienteling-Prefix.pch";
 				INFOPLIST_FILE = "Clienteling/Clienteling-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
